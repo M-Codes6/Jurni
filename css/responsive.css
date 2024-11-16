@@ -50,6 +50,17 @@
         padding: 20px 40px; 
         font-size: 0.85em;
     }
+
+    
+    .features {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 150px;
+    }
 }
 
 
