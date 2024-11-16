@@ -1,0 +1,173 @@
+/* Body gradient background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, #2A2438, #6F4F82, #9B8BB3);
+    color: #DBD8E3; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Container styling */
+.container {
+    text-align: center; 
+}
+
+/* Image styling */
+.container img {
+    width: 150px; 
+    border-radius: 50%;
+    height: auto;
+    margin-bottom: 40px;
+    opacity: 0; 
+    transform: scale(0.8); 
+    animation: imageLoad 2s ease-out forwards, vignetteEffect 1.5s ease-out forwards; 
+}
+
+/* Keyframes for the image fade-in animation */
+@keyframes imageLoad {
+    0% {
+        opacity: 0;
+        transform: scale(0.8); 
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Vignette effect keyframe */
+@keyframes vignetteEffect {
+    0% {
+        filter: brightness(0.2) blur(3px); 
+    }
+    100% {
+        filter: brightness(1) ; 
+    }
+}
+
+/* Heading styling */
+.container h1 {
+    color: #DBD8E3; 
+    font-size: 1.8em;
+    margin: 0;
+    padding-bottom: 20px;
+    opacity: 0; 
+    transform: scale(0.8); 
+    animation: h1Load 2s ease-out forwards;
+}
+
+/* Keyframes for the h1 fade-in animation */
+@keyframes h1Load {
+    0% {
+        opacity: 0;
+        transform: scale(0.8); 
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.container p {
+    color: #DBD8E3; 
+    font-size: 0.7em;
+    margin: 0;
+    padding-bottom: 20px;
+    opacity: 0; 
+    transform: scale(0.8); 
+    animation: pLoad 2s ease-out forwards;
+}
+
+
+/* Keyframes for the p fade-in animation */
+@keyframes pLoad {
+    0% {
+        opacity: 0;
+        transform: scale(0.7); 
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* Button styling */
+.container button {
+    background-color: #5C5470; 
+    color: #DBD8E3; 
+    border: none;
+    padding: 10px 30px;
+    border-radius: 15px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+    animation: popUp 1s ease forwards;
+}
+
+/* Keyframes for the pop-up effect */
+@keyframes popUp {
+    0% {
+        transform: translateY(70px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.container button:hover {
+    background-color: #352F44; 
+}
+
+.container button a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* Features Section */
+section {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 100px; */
+}
+
+.features {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: #352F44; /* Slightly lighter background for boxes */
+    color: #DBD8E3; /* Light text for readability */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.box:hover {
+    background-color: #5C5470; /* Highlight on hover */
+    transform: translateY(-10px);
+}
+
+.box h2 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #DBD8E3; /* Light text color for headings */
+}
