@@ -17,7 +17,7 @@
         font-size: 0.9em;  
     }
 
-    .features {
+    /* .features {
         flex-direction: column;
         gap: 15px;
     }
@@ -25,7 +25,7 @@
     .box {
         width: 100%;
         max-width: 200px;
-    }
+    } */
 }
 
 /* Small screens (Mobile devices, 480px and below) */
@@ -47,12 +47,13 @@
     }
 
     .container button {
+        width: 60vw;
         padding: 20px 40px; 
         font-size: 0.85em;
     }
 
     
-    .features {
+    /* .features {
         flex-direction: column;
         gap: 15px;
     }
@@ -60,7 +61,7 @@
     .box {
         width: 100%;
         max-width: 150px;
-    }
+    } */
 }
 
 

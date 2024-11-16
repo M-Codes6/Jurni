@@ -102,7 +102,8 @@ body {
     background-color:  #352F44; 
     color: #DBD8E3; 
     border: none;
-    padding: 10px 30px;
+    padding: 20px 40px;
+    width: 20vw;
     border-radius: 15px;
     font-size: 1em;
     cursor: pointer;
@@ -133,13 +134,14 @@ body {
 }
 
 
-/* Features Section */
+
+
+/* 
 section {
     padding: 50px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-top: 100px; */
 }
 
 .features {
@@ -151,8 +153,8 @@ section {
 }
 
 .box {
-    background-color: #352F44; /* Slightly lighter background for boxes */
-    color: #DBD8E3; /* Light text for readability */
+    background-color: #352F44; 
+    color: #DBD8E3; 
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -162,12 +164,12 @@ section {
 }
 
 .box:hover {
-    background-color: #5C5470; /* Highlight on hover */
+    background-color: #5C5470; 
     transform: translateY(-10px);
 }
 
 .box h2 {
     font-size: 1.5em;
     margin: 0;
-    color: #DBD8E3; /* Light text color for headings */
-}
+    color: #DBD8E3; 
+} */
