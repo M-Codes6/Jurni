@@ -99,7 +99,7 @@ body {
 
 /* Button styling */
 .container button {
-    background-color: #5C5470; 
+    background-color:  #352F44; 
     color: #DBD8E3; 
     border: none;
     padding: 10px 30px;
@@ -124,7 +124,7 @@ body {
 }
 
 .container button:hover {
-    background-color: #352F44; 
+    background-color: #5C5470; 
 }
 
 .container button a {
