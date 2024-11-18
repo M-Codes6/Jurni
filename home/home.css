@@ -8,11 +8,18 @@ body {
 
 }
 
+/* HEADER */
+
 header {
+    position: fixed; 
+    top: 0;          
+    width: 100%;   
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    background-color: #2A2438;
+    z-index: 1000;
 }
 
 .text h4, .text h1 {
@@ -40,11 +47,15 @@ header {
     border-radius: 50%;
 }
 
+.menu img:hover {
+    background: #d6d3d3;
+}
 
 .search {
     position: relative;
     display: flex;
     align-items: center;
+    margin-right: 30px;
 }
 
 .search input[type="text"] {
@@ -60,3 +71,40 @@ header {
     width: 18px;
     height: 18px;
 }
+
+
+/* SECTION */
+
+
+.category {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: 100px;
+  }
+  
+  .category-card {
+    background-color: #DBD8E3;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 30px;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+
+  }
+  
+  .category-card:hover {
+    background-color: #C3BECF;
+  }
+
+
+  .category-card img {
+    width: 100%;
+    height: auto;
+    max-height: 150px; 
+    object-fit: cover; 
+    object-position: top; 
+    border-radius: 15px; 
+  }
+  
