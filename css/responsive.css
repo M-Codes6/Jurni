@@ -65,6 +65,12 @@
         grid-template-columns: repeat(2, 1fr); 
     }
   */
+
+  .book-card img {
+    height: auto; 
+    object-fit: contain; 
+ }
+
 }
 
 /* Small screens (Mobile devices, 480px and below) */
