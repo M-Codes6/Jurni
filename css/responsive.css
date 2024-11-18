@@ -61,7 +61,10 @@
         margin-top: 160px;
     }
 
-   
+    .book-list {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+ 
 }
 
 /* Small screens (Mobile devices, 480px and below) */
