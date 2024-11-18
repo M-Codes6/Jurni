@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Select all book-card elements
     const bookCards = document.querySelectorAll('.book-card');
 
-    // Add a click event listener to each book-card
     bookCards.forEach(function(card) {
         card.addEventListener('click', function() {
             openBook(card);
@@ -33,6 +31,6 @@ function openBook(selectedCard) {
     // Get the URL from the data-url attribute
     const iframeSrc = selectedCard.getAttribute('data-url');
 
-    // Embed the iframe in the container
-    iframeContainer.innerHTML = `<iframe src="${iframeSrc}" width="100%" height="380" scrolling="no" frameborder="0" allow="clipboard-write; autoplay; fullscreen"></iframe>`;
+    // Embed the iframe in the container with fullscreen enabled
+    iframeContainer.innerHTML = `<iframe src="${iframeSrc}" width="100%" height="380" scrolling="no" frameborder="0" allow="clipboard-write; autoplay; fullscreen" allowfullscreen></iframe>`;
 }
