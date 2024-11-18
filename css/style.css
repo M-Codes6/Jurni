@@ -79,3 +79,22 @@ body {
 }
 
 
+footer {
+    margin: 50px;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #535252;
+}
+
+footer h3 {
+    font-size: 14px;  
+}
+
+footer p {
+    font-size: 12px;
+    color: #535252;  
+    margin: 5px 0 0;  
+}
+
+

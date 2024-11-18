@@ -3,6 +3,11 @@ body {
 }
 
 h1 {
+    position: fixed;
+    background-color:  #352F44; 
+    width: 100%;
+    top: -25px;
+    padding: 20px;
     color: #fff;
     font-size: 2em;
 }
@@ -10,6 +15,7 @@ h1 {
 .book-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin-top: 80px;
 }
 
 .book-card {

@@ -1,0 +1,32 @@
+body {
+    background-color:  #352F44; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    align-content: center;
+    padding: 30px;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 3em;
+    box-shadow: 0 8px 10px #000;
+    margin: 40px;
+    animation: glowing 1.5s infinite alternate;
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #467bed, 0 0 30px #467bed, 0 0 40px #467bed, 0 0 50px #ff0080;
+    }
+    50% {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #467bed, 0 0 50px #467bed, 0 0 60px #467bed, 0 0 70px #ff0080;
+    }
+    100% {
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #467bed, 0 0 30px #467bed, 0 0 40px #467bed, 0 0 50px #ff0080;
+    }
+}

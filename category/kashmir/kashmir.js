@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function openBook(selectedCard) {
+
     // Hide all iframe containers and restore the cover images
     const allCards = document.querySelectorAll('.book-card');
     allCards.forEach(card => {
@@ -34,3 +35,5 @@ function openBook(selectedCard) {
     // Embed the iframe in the container with fullscreen enabled
     iframeContainer.innerHTML = `<iframe src="${iframeSrc}" width="100%" height="380" scrolling="no" frameborder="0" allow="clipboard-write; autoplay; fullscreen" allowfullscreen></iframe>`;
 }
+
+
