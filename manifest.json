@@ -1,0 +1,40 @@
+{
+    "name": "Jurny",
+    "short_name": "Jurny",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#2A2438",
+
+    "icons": [
+      {
+        "src": "/assets/images/Logo_J.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "/assets/images/Logo_J.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "/assets/images/Logo_J.png",
+        "sizes": "144x144",
+        "type": "image/png",
+        "purpose": "any"
+      }
+      
+    ],
+
+     "screenshots": [
+        {
+      "src": "/assets/images/appSS.png",
+      "sizes": "355x735",
+      "type": "image/png",
+      "form_factor": "narrow"  
+    }
+  ]
+  }
+  

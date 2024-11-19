@@ -7,6 +7,7 @@
     <link rel="icon" href="assets/images/Logo_J.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="manifest" href="manifest.json">
 
 </head>
 <body>
@@ -21,8 +22,24 @@
     <footer>
         <h3>From</h3>
         <p>Muzamil--( M_Codes6 )</p>
+    
     </footer>
 
+
+
+
+
+<script>
+
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker
+    .register("/service-worker.js")
+    .then(() => console.log("Service Worker Registered"))
+    .catch(error => console.error("Service Worker Registration Failed:", error));
+}
+
+
+</script>
     
 </body>
 </html>
