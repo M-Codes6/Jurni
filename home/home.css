@@ -108,3 +108,35 @@ header {
     border-radius: 15px; 
   }
   
+
+  
+/* Styling for the results container */
+
+#results {
+    position: absolute;
+    right: 50px;
+    margin-top: 75px;
+    background-color: #f9f9f9;
+    max-height: 250px; 
+    overflow-y: auto;
+    width: 15%; 
+    border-radius: 5px; /* Smooth corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    z-index: 1000;
+}
+
+/* Styling for each result item */
+#results div {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333; 
+}
+
+#results div:hover {
+    background-color: #cbcaca; 
+}
+
+#results div a {
+    text-decoration: none;
+}

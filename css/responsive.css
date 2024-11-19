@@ -77,6 +77,16 @@
     object-fit: contain; 
  }
 
+ #results {
+    margin: 145px 0 0 40px;
+    width: 50%; 
+    font-size: 14px; 
+}
+
+#results div {
+    padding: 10px; 
+}
+
 }
 
 /* Small screens (Mobile devices, 480px and below) */
