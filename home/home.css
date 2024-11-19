@@ -114,8 +114,8 @@ header {
 
 #results {
     position: absolute;
-    right: 50px;
-    margin-top: 75px;
+    right: 100px;
+    margin-top: 173px;
     background-color: #f9f9f9;
     max-height: 250px; 
     overflow-y: auto;
