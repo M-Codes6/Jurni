@@ -19,8 +19,8 @@ body {
 
 /* Image styling */
 .container img {
-    width: 150px; 
-    border-radius: 50%;
+    border-radius: 10px;
+    width: 10%;
     height: auto;
     margin-bottom: 40px;
     opacity: 0; 
