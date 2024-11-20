@@ -4,6 +4,10 @@ const books = [
     { title: "Kashmir Biography", path: "../category/kashmir/kashmir.html" },
     { title: "Scattered Souls", path: "../category/kashmir/kashmir.html" },
     { title: "The Arts of Kashmir", path: "../category/kashmir/kashmir.html" },
+    { title: "Archeological Remains in Kashmir", path: "../category/kashmir/kashmir.html" },
+    { title: "1996 Kashmir", path: "../category/kashmir/kashmir.html" },
+    { title: "Until My freedom has Come", path: "../category/kashmir/kashmir.html" },
+
 
 ];
 
