@@ -18,14 +18,22 @@
 
         
         <div class="icons">
+
             <span class="menu">
             <img src="../assets/icons/hamburger.svg" alt="menu-icon">
             </span>
-            <span class="notify">
-            <img src="../assets/icons/notify.svg" alt="notification-icon">
+
+            <span class="notify" onclick="openNotifications()">
+                <img src="../assets/icons/notify.svg" alt="notification-icon">
+                <span id="notification-count" class="notification-counter">0</span> <!-- Notification count -->
             </span>
+        
         </div>
 
+        <!-- Notification Message -->
+    <div id="notification" class="notification-message">
+        <span id="notification-message-text"></span>
+    </div>
         
         
 

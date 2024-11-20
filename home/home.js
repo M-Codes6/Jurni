@@ -52,3 +52,44 @@ document.getElementById("search-input").addEventListener("keypress", function(ev
         searchBooks();
     }
 });
+
+
+
+
+// Notification
+
+
+// Function to open notification page and reset the count
+function openNotifications() {
+    // Redirect to the notifications page
+    window.location.href = './notify/notify.html';
+
+    // Reset the notification count when opened
+    localStorage.setItem('unreadNotifications', 0);
+    updateNotificationCounter();
+}
+
+// Function to update the notification counter on the icon
+function updateNotificationCounter() {
+    const unreadCount = localStorage.getItem('unreadNotifications') || 0;
+    const notificationCountElement = document.getElementById('notification-count');
+    if (unreadCount > 0) {
+        notificationCountElement.style.display = 'block';
+        notificationCountElement.textContent = unreadCount;
+    } else {
+        notificationCountElement.style.display = 'none';
+    }
+}
+
+// Simulate a new notification being added
+function addNotification(message) {
+    let unreadNotifications = parseInt(localStorage.getItem('unreadNotifications')) || 0;
+    unreadNotifications += 1; // Increment the count
+    localStorage.setItem('unreadNotifications', unreadNotifications);
+    updateNotificationCounter();
+}
+
+// Initialize the notification counter when the page loads
+window.onload = function() {
+    updateNotificationCounter();
+}

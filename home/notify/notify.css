@@ -1,0 +1,77 @@
+/* notifications.css */
+
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Notification List Styling */
+.notification-list {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0;
+    list-style: none;
+}
+
+.notification-item {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.notification-item:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Notification Content */
+.notification-item p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.notification-item strong {
+    color: #4CAF50;
+}
+
+
+
+
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    header {
+        font-size: 20px;
+        padding: 15px 0;
+    }
+
+    .notification-item {
+        padding: 12px;
+    }
+
+    .notification-item p {
+        font-size: 14px;
+    }
+}
