@@ -114,3 +114,9 @@ function showToastNotification(message) {
 window.onload = function() {
     updateNotificationCounter();
 }
+
+
+    //  For Menu 
+    document.querySelector('.menu').addEventListener('click', function() {
+        window.location.href = './menu/menu.html';
+    });
