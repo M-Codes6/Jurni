@@ -13,18 +13,29 @@
         <h1>Notifications</h1>
     </header>
 
+    <!-- Notification Icon with Count -->
+    <div id="notification-container" style="position: fixed; top: 20px; right: 20px; cursor: pointer;">
+        <div id="notification-icon" style="position: relative; width: 40px; height: 40px; background-color: #4CAF50; border-radius: 50%;">
+            <span id="notification-count" style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background-color: red; color: white; font-size: 12px; border-radius: 50%; padding: 5px;"></span>
+        </div>
+    </div>
+
+    <!-- Notification List -->
     <section>
         <div class="notification-list">
-            <!-- <div class="notification-item">
-                <p><strong></strong></p>
-            </div> -->
+            <!-- Example Notification -->
             <div class="notification-item">
-                <p><strong> Update </strong> 3 New Books added</p>
+                <p><strong>Update:</strong> 3 New Books added</p>
             </div>
-            
+            <div class="notification-item">
+                <p><strong> New Feature: <strong> Menu Functionality </p>
+            </div>
         </div>
     </section>
 
+    <!-- Toast Notification (this will be dynamically added) -->
+    <div id="toast-container"></div>
 
+    <script src="home.js"></script> 
 </body>
 </html>

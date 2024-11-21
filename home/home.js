@@ -58,38 +58,59 @@ document.getElementById("search-input").addEventListener("keypress", function(ev
 
 // Notification
 
-
-// Function to open notification page and reset the count
+// Same notification code as before
 function openNotifications() {
-    // Redirect to the notifications page
     window.location.href = './notify/notify.html';
-
-    // Reset the notification count when opened
     localStorage.setItem('unreadNotifications', 0);
     updateNotificationCounter();
 }
 
-// Function to update the notification counter on the icon
 function updateNotificationCounter() {
     const unreadCount = localStorage.getItem('unreadNotifications') || 0;
     const notificationCountElement = document.getElementById('notification-count');
     if (unreadCount > 0) {
         notificationCountElement.style.display = 'block';
         notificationCountElement.textContent = unreadCount;
+        flashNotificationIcon();
     } else {
         notificationCountElement.style.display = 'none';
     }
 }
 
-// Simulate a new notification being added
 function addNotification(message) {
     let unreadNotifications = parseInt(localStorage.getItem('unreadNotifications')) || 0;
-    unreadNotifications += 1; // Increment the count
+    unreadNotifications += 1;
     localStorage.setItem('unreadNotifications', unreadNotifications);
     updateNotificationCounter();
+    playNotificationSound();
+    showToastNotification(message);
 }
 
-// Initialize the notification counter when the page loads
+function flashNotificationIcon() {
+    const notificationIcon = document.getElementById('notification-icon');
+    if (notificationIcon) {
+        notificationIcon.classList.add('flash');
+        setTimeout(() => {
+            notificationIcon.classList.remove('flash');
+        }, 1000);
+    }
+}
+
+function playNotificationSound() {
+    const audio = new Audio('path/to/notification-sound.mp3');
+    audio.play();
+}
+
+function showToastNotification(message) {
+    const toast = document.createElement('div');
+    toast.classList.add('toast');
+    toast.textContent = message;
+    document.getElementById('toast-container').appendChild(toast);
+    setTimeout(() => {
+        toast.remove();
+    }, 3000);
+}
+
 window.onload = function() {
     updateNotificationCounter();
 }
