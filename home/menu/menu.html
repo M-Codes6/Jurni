@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="icon" href="/assets/images/Logo_J.png">
+</head>
+<body>
+
+    <header>
+        <h1>Menu</h1>
+    </header>
+
+
+
+            <section>
+                <div class="menu-list">
+
+                    <!-- Settings -->
+                    <div class="menu-item">
+                        <img src="/assets/icons/setting.svg" alt="setting-icon">
+                        <span>Settings</span>
+                    </div>
+            
+                    <!-- Bookmarks -->
+                    <div class="menu-item">
+                        <img src="/assets/icons/bookmark.svg" alt="bookmark-icon">
+                        <span>Bookmarks</span>
+                    </div>
+            
+                    <!-- About -->
+                    <div class="menu-item" data-target="about-content">
+                        <img src="/assets/icons/about.svg" alt="about-icon">
+                        <span>About</span>
+
+                                       <!-- About Content -->
+                                <div id="about-content" class="hidden">
+                                    <h2>About Jurni</h2>
+                                        <p>
+                                            Jurni is a modern library app designed to help users manage and explore their personal reading journeys. From tracking favorite books to discovering new recommendations, Jurni empowers readers to stay organized and inspired.
+                                            Currently, the app is in its basic version and will become more feature-rich in the future.
+                                            <strong>Developed by Muzamil (M_Codes6)</strong>
+                                                                
+                                        </p>
+                                </div>
+                    </div>
+
+                    
+            
+                    <!-- Feedback/Suggestions -->
+                    <div class="menu-item">
+                        <img src="/assets/icons/feedback.svg" alt="Feedback-icon">
+                        <span>Feedback/Suggestions</span>
+                    </div>
+            
+                    <!-- Help & Support -->
+                    <div class="menu-item">
+                        <img src="/assets/icons/help.svg" alt="help-icon">
+                        <span>Help & Support</span>
+                    </div>
+                </div>
+
+
+                  <!-- Content Displaying -->
+
+    
+
+
+
+            </section>
+
+
+            
+    <script>
+
+// Select all menu items
+const menuItems = document.querySelectorAll('.menu-item');
+
+// Add click event listener to each menu item
+menuItems.forEach(item => {
+    item.addEventListener('click', () => {
+        // Get the target content ID from data-target attribute
+        const targetId = item.getAttribute('data-target');
+        const targetContent = document.getElementById(targetId);
+        
+        // Hide all content sections
+        document.querySelectorAll('.menu-list + div').forEach(content => {
+            content.classList.add('hidden');
+        });
+
+        // Show the clicked content
+        targetContent.classList.toggle('hidden');
+    });
+});
+
+
+
+    </script>
+</body>
+</html>
