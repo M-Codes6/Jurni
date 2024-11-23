@@ -48,3 +48,9 @@ h1 {
     font-size: 14px;
     color: #ccc;
 }
+
+canvas {
+    border: 1px solid #ccc;
+    display: block;
+    margin: 20px auto;
+}

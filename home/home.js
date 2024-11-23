@@ -117,6 +117,29 @@ window.onload = function() {
 
 
     //  For Menu 
-    document.querySelector('.menu').addEventListener('click', function() {
-        window.location.href = './menu/menu.html';
-    });
+
+  function openMenu() {
+    console.log('Menu opened!');
+    window.location.href = 'menu/menu.html'; // Update path based on your folder structure
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuIcon = document.querySelector('.menu');
+
+    if (menuIcon) {
+        menuIcon.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent default action
+            console.log('Click event triggered');
+            openMenu();
+        });
+
+        // For mobile devices, handle touch events as well
+        menuIcon.addEventListener('touchstart', (event) => {
+            event.preventDefault(); // Prevent default touch behavior
+            console.log('Touch event triggered');
+            openMenu();
+        });
+    }
+});
+
+    
