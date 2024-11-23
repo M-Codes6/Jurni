@@ -7,6 +7,8 @@ const books = [
     { title: "Archeological Remains in Kashmir", path: "../category/kashmir/kashmir.html" },
     { title: "1996 Kashmir", path: "../category/kashmir/kashmir.html" },
     { title: "Until My freedom has Come", path: "../category/kashmir/kashmir.html" },
+    { title: "Kashmir Case", path: "../category/kashmir/kashmir.html" },
+    { title: "Inside Kashmir", path: "../category/kashmir/kashmir.html" },
 
 
 ];
