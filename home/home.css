@@ -44,6 +44,14 @@ header {
     margin-right: 20px; 
 }
 
+.menu {
+    z-index: 1000; 
+    position: relative; 
+    touch-action: manipulation; 
+    cursor: pointer; 
+}
+
+
 .menu img, .notify img {
     width: 24px; 
     height: 24px;

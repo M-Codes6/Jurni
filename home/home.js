@@ -98,11 +98,6 @@ function flashNotificationIcon() {
     }
 }
 
-function playNotificationSound() {
-    const audio = new Audio('path/to/notification-sound.mp3');
-    audio.play();
-}
-
 function showToastNotification(message) {
     const toast = document.createElement('div');
     toast.classList.add('toast');
@@ -118,9 +113,8 @@ window.onload = function() {
 }
 
 
-    //  For Menu 
-
-  function openMenu() {
+   // For Menu 
+function openMenu() {
     console.log('Menu opened!');
     window.location.href = 'menu/menu.html'; // Update path based on your folder structure
 }
@@ -129,19 +123,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuIcon = document.querySelector('.menu');
 
     if (menuIcon) {
+        // Combined click and touchstart event handling
         menuIcon.addEventListener('click', (event) => {
             event.preventDefault(); // Prevent default action
             console.log('Click event triggered');
             openMenu();
         });
 
-        // For mobile devices, handle touch events as well
         menuIcon.addEventListener('touchstart', (event) => {
             event.preventDefault(); // Prevent default touch behavior
             console.log('Touch event triggered');
             openMenu();
         });
+
+        // Prevent click propagation to avoid conflicts
+        menuIcon.addEventListener('touchend', (event) => {
+            event.preventDefault();
+            console.log('Touch end event triggered');
+        });
     }
 });
-
-    
